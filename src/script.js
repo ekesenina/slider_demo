@@ -1,16 +1,22 @@
 //Объявляем массив с картинками
 let images = [{
   url: "img/img1.png",
-  title: "1",
-  City: "Rostov-on-Don"
+  title: "Rostov-on-Don, Admiral",
+  city: "Rostov-on-Don<br> LCD admiral",
+  area: "81 m2",
+  time: "3.5 months"
 },{
   url: "img/img2.png",
-  title: "2",
-  City: "Omsk"
+  title: "Sochi Thieves",
+  city: "Sochi<br> Thieves",
+  area: "105 m2",
+  time: "4 months"
 },{
   url: "img/img3.png",
-  title: "3",
-  City: "Moscow"
+  title: "Rostov-on-Don Patriotic",
+  city: "Rostov-on-Don<br> Patriotic",
+  area: "93 m2",
+  time: "3 months"
 }
 ]
 
@@ -57,15 +63,15 @@ function initSlider(options){
             `<div class="div_project_options" n${index} ${index === 0? "active" : ""} data-index = "${index}">
                         <div class="project_options_item">
                             <h3 class="subtitle project_options orange_text">City:</h3>
-                            <p class="paragraph paragraph_project_options">${images[index].City} <br> LCD admiral</p>
+                            <p class="paragraph paragraph_project_options">${images[index].city}</p>
                         </div>
                         <div class="project_options_item">
                             <h3 class="subtitle project_options orange_text">apartment area:</h3>
-                            <p class="paragraph paragraph_project_options">81 m2</p>
+                            <p class="paragraph paragraph_project_options">${images[index].area}</p>
                         </div>
                         <div class="project_options_item">
                             <h3 class="subtitle project_options orange_text">Repair time:</h3>
-                            <p class="paragraph paragraph_project_options">3.5 months</p>
+                            <p class="paragraph paragraph_project_options">${images[index].time}</p>
                         </div>
                         <div class="project_options_item">
                             <h3 class="subtitle project_options orange_text">Repair Cost:</h3>
