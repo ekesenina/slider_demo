@@ -4,59 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider_JS</title>
+    <title>slider</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="background_black">
+  <!-- slider -->
     <main>
-        <section class="background_black background_black_mobile" id="projects">
+        <section class="">
             <div class="content content_projects">
                 <ul class="projects_nav">
                     <li class="projects_nav_item"><a href="#">Rostov-on-Don, Admiral</a></li>
                     <li class="projects_nav_item"><a href="#">Sochi Thieves</a></li>
                     <li class="projects_nav_item"><a href="#">Rostov-on-Don Patriotic</a></li>
                 </ul>
-                <div class="completed_projects">
-                    <div class="completed_projects_info">
-                        <h2 class="subtitle subtitle_projects orange_text ">Completed <br>projects</h2>
-                        <p class="paragraph paragraph_projects">
-                            Only a small part of the work performed by our company is presented
-                            on the site. For 14 years on in the construction
-                            market we have made happy more than 1000 families
-                        </p>
-                        <div>
-                            <img src="img/completed_projects_img_mobile.jpg" alt=".jpg" class="completed_projects_img_mobile">
-                        </div>
-                        <div class="div_project_options">
-                            <div class="project_options_item">
-                                <h3 class="subtitle project_options orange_text">City:</h3>
-                                <p class="paragraph paragraph_project_options">Rostov-on-Don <br> LCD admiral</p>
-                            </div>
-                            <div class="project_options_item">
-                                <h3 class="subtitle project_options orange_text">apartment area:</h3>
-                                <p class="paragraph paragraph_project_options">81 m2</p>
-                            </div>
-                            <div class="project_options_item">
-                                <h3 class="subtitle project_options orange_text">Repair time:</h3>
-                                <p class="paragraph paragraph_project_options">3.5 months</p>
-                            </div>
-                            <div class="project_options_item">
-                                <h3 class="subtitle project_options orange_text">Repair Cost:</h3>
-                                <p class="paragraph paragraph_project_options">Upon request</p>
-                            </div>
-                        </div>
-                        <div class="slider">
-                            <img src="icons/left_arrow.svg" alt=".svg" class="left_arrow">
-                            <img src="icons/active_dot.svg" alt=".svg" class="dot">
-                            <img src="icons/unactive_dot.svg" alt=".svg" class="dot">
-                            <img src="icons/unactive_dot.svg" alt=".svg">
-                            <img src="icons/right_arrow.svg" alt=".svg" class="right_arrow">
+            </div>
+            <div class="slider">
+                <div class="projects_info">
+                    <div class="completed_projects">
+                        <div class="completed_projects_info">
+                            <h2 class="subtitle subtitle_projects orange_text ">Completed <br>projects
+                                <img src="icons/Rectangle 6.2.svg" alt="" id="line"></h2>
+                            <p class="paragraph paragraph_projects">
+                                Only a small part of the work performed by our company is presented
+                                on the site. For 14 years on in the construction
+                                market we have made happy more than 1000 families
+                            </p>
                         </div>
                     </div>
-                    <div>
-                        <img src="img/img1.png" alt=".jpg" class="completed_projects_img">
+                    <div class="slider_project_options">
                     </div>
+                    <!-- <div class="div_project_options">
+                        <div class="project_options_item">
+                            <h3 class="subtitle project_options orange_text">City:</h3>
+                            <p class="paragraph paragraph_project_options">Rostov-on-Don <br> LCD admiral</p>
+                        </div>
+                        <div class="project_options_item">
+                            <h3 class="subtitle project_options orange_text">apartment area:</h3>
+                            <p class="paragraph paragraph_project_options">81 m2</p>
+                        </div>
+                        <div class="project_options_item">
+                            <h3 class="subtitle project_options orange_text">Repair time:</h3>
+                            <p class="paragraph paragraph_project_options">3.5 months</p>
+                        </div>
+                        <div class="project_options_item">
+                            <h3 class="subtitle project_options orange_text">Repair Cost:</h3>
+                            <p class="paragraph paragraph_project_options">Upon request</p>
+                        </div>
+                    </div> -->
+                    <div class="slider__arrows">
+                        <div class="slider__arrow left"> <img src="icons/left_arrow.svg" alt=""> </div>
+                        <div class="slider__dots"></div>
+                        <div class="slider__arrow right"><img src="icons/right_arrow.svg" alt=""></div>
+                    </div>
+                    
                 </div>
+                <div class="slider__images"></div>
+                
             </div>
         </section>
     </main>
